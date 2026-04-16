@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos de Git</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Fundamentos de Git</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="fundamentos.html">Fundamentos</a></li>
+          <li><a href="flujo.html">Flujo Git</a></li>
+          <li><a href="github.html">GitHub</a></li>
+          <li><a href="practica.html">Práctica</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>¿Qué es Git?</h2>
+      <p>Git es un sistema de control de versiones. Permite guardar el historial de cambios de un proyecto, volver atrás si algo falla y trabajar de forma más segura.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h3>Repositorio</h3>
+        <p>Es la carpeta del proyecto que Git empieza a rastrear con <code>git init</code>.</p>
+      </article>
+
+      <article class="card">
+        <h3>Commit</h3>
+        <p>Es una confirmación de cambios, como una foto del estado del proyecto en un momento determinado.</p>
+      </article>
+
+      <article class="card">
+        <h3>Branch</h3>
+        <p>Es una rama de trabajo. Sirve para desarrollar cambios sin tocar la versión principal.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Comandos básicos</h2>
+      <div class="code-block">
+        <pre><code>git init
+git status
+git add .
+git commit -m "Primer commit"
+git log</code></pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>Estados de archivos</h2>
+      <ul class="content-list">
+        <li><strong>Untracked:</strong> Git todavía no rastrea el archivo.</li>
+        <li><strong>Staged:</strong> el archivo fue agregado para el próximo commit.</li>
+        <li><strong>Committed:</strong> el cambio ya quedó guardado en el historial.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Git ayuda a trabajar con orden, historial y seguridad.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica guiada</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Práctica guiada</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="fundamentos.html">Fundamentos</a></li>
+          <li><a href="flujo.html">Flujo Git</a></li>
+          <li><a href="github.html">GitHub</a></li>
+          <li><a href="practica.html">Práctica</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Actividad propuesta</h2>
+      <p>Seguí estos pasos para publicar este sitio en GitHub desde tu equipo.</p>
+    </section>
+
+    <section>
+      <ol class="content-list">
+        <li>Crear una carpeta del proyecto.</li>
+        <li>Guardar dentro los archivos HTML y CSS.</li>
+        <li>Abrir la terminal en esa carpeta.</li>
+        <li>Inicializar Git.</li>
+        <li>Hacer el primer commit.</li>
+        <li>Crear un repositorio en GitHub.</li>
+        <li>Conectar el remoto y hacer push.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Comandos para practicar</h2>
+      <div class="code-block">
+        <pre><code>git init
+git add .
+git commit -m "Primer commit del sitio de clase"
+git branch -M main
+git remote add origin https://github.com/tu-usuario/tu-repo.git
+git push -u origin main</code></pre>
+      </div>
+    </section>
+
+    <section class="callout">
+      <h2>Desafío para estudiantes</h2>
+      <p>Agregar una nueva página llamada <code>comandos.html</code> con una lista de comandos de Git y enlazarla desde el menú de navegación.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>La mejor forma de aprender Git es practicar con proyectos reales.</p>
+    </div>
+  </footer>
+</body>
+</html>

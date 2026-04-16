@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flujo de trabajo con Git</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Flujo de trabajo con Git</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="fundamentos.html">Fundamentos</a></li>
+          <li><a href="flujo.html">Flujo Git</a></li>
+          <li><a href="github.html">GitHub</a></li>
+          <li><a href="practica.html">Práctica</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Flujo básico</h2>
+      <ol class="content-list">
+        <li>Crear o abrir el proyecto.</li>
+        <li>Inicializar Git con <code>git init</code>.</li>
+        <li>Agregar archivos con <code>git add .</code>.</li>
+        <li>Guardar cambios con <code>git commit</code>.</li>
+        <li>Subir al repositorio remoto con <code>git push</code>.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Ejemplo real</h2>
+      <div class="code-block">
+        <pre><code>git init
+git add .
+git commit -m "Agrega estructura inicial del sitio"
+git branch -M main
+git remote add origin https://github.com/usuario/repositorio.git
+git push -u origin main</code></pre>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h3>Push</h3>
+        <p>Envía los commits locales al repositorio remoto.</p>
+      </article>
+
+      <article class="card">
+        <h3>Pull</h3>
+        <p>Trae los cambios del remoto al equipo local.</p>
+      </article>
+
+      <article class="card">
+        <h3>Clone</h3>
+        <p>Copia un repositorio remoto completo a tu computadora.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Trabajar con ramas</h2>
+      <div class="code-block">
+        <pre><code>git checkout -b feature/navbar
+git add .
+git commit -m "Mejora la navegación"
+git push origin feature/navbar</code></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>El flujo correcto evita pérdidas de trabajo y facilita la colaboración.</p>
+    </div>
+  </footer>
+</body>
+</html>
